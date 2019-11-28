@@ -20,7 +20,7 @@ A - Generating suggestions for a generated grammar
 ```java
 LexerAndParserFactory lexerAndParserfactory = new ReflectionLexerAndParserFactory(
         MyGeneratedLexer.class, MyGeneratedParser.class);
-Collection<String> suggestions = new AutoComplete(lexerAndParserFactory, "Complete this tex").suggestCompletions();
+Collection<String> suggestions = new AutoSuggester(lexerAndParserFactory, "Complete this tex").suggestCompletions();
 ```
 
 == How It Works
